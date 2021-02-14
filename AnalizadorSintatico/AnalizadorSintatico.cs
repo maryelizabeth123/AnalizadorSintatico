@@ -9,10 +9,10 @@ namespace AnalizadorSintatico
     public partial class AnalizadorSintatico : Form
     {
         DataTable analisis = new DataTable();
-        List<char> delimitadores = new List<char>(new char[] { '(', ')', ':', ';', '[', ']', '{', '}' });
+        List<char> delimitadores = new List<char>(new char[] { '(', ')', ':', ';', '[', ']', '{', '}', '"'});
         List<char> constante = new List<char>(new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' });
         List<char> identificadores = new List<char>(new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' });
-        List<char> operadores = new List<char>(new char[] { '+', '-', '*', '/' });
+        List<char> operadores = new List<char>(new char[] { '+', '-', '*', '/', '<', '>', '=', '!'});
 
         public AnalizadorSintatico()
         {
